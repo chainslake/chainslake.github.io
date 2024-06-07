@@ -111,9 +111,9 @@ layout: post
     hadoop@10.0.0.1 ~$ mkdir projects
     hadoop@10.0.0.1 ~$ sudo mount /dev/sdc /home/hadoop/projects/
     ```
-    - Upload your chainslake install archive file to `projects` directory and untar it
+    - Install git and clone project __chainslake__ from your repository
     ```sh
-    hadoop@10.0.0.1 projects$ tar -xzvf chainslake-aws-[version].tar.gz
+    hadoop@10.0.0.1 projects$ git clone git@github.com:YOUR_ORGANIZATION/chainslake.git
     ```
 7. Config docker
     ```sh
