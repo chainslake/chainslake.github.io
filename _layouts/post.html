@@ -1,67 +1,49 @@
-<!DOCTYPE HTML>
-<html lang="en" >
-    <head>
+---
+layout: page
+---
 
-        {%- include head.html -%}
+{% if page.image and page.headerImage %}
+    <img class="title-image" src="{{ page.image }}" alt="{{ page.title }}">
+{% endif %}
 
-        {% if page.previous %}
-            <link rel="prev" href="{{site.baseurl}}{{page.previous.url}}" />
+<h1 class="title">{{ page.title }}</h1>
+
+<span class="date">
+    <time datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%A. %B %d, %Y" }}</time>
+    {% if site.read-time %} - {% include read-time.html %}{% endif %}
+</span>
+
+{% if site.show-tags %}
+    <div class="post-tags">
+        {% for tag in page.tags %}
+            <a class="item" href="{{ site.url }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
+        {% endfor %}
+    </div>
+{% endif %}
+
+{{content}}
+
+{% if site.post-advance-links contains page.category %}
+    <div class="blog-navigation">
+        {% if page.previous.hidden == false and page.previous.url %}
+            <a class="prev" href="{{ site.url }}{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
         {% else %}
-            <link rel="prev" href="{{site.baseurl}}/" />
+            <a class="prev"></a>
         {% endif %}
-
-        {% if page.next %}
-            <link rel="next" href="{{site.baseurl}}{{page.next.url}}" />
+        {% if page.next.hidden == false and page.next.url %}
+            <a class="next" href="{{ site.url }}{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
         {% endif %}
-    </head>
-    <body>
-        <div class="book">
+    </div>
+{% endif %}
 
-            {%- include toc-date.html -%}
+{% if site.related %}
+    {% include related.html %}
+{% endif %}
 
-            <div class="book-body">
-                <div class="book-header" role="navigation">
-                    <!-- Title -->
-                    <h1>
-                        <i class="fa fa-circle-o-notch fa-spin"></i>
-                        {% if page.title %}
-                            <a href="." >{{ page.title | escape }}</a>
-                        {% else %}
-                            <a href="." >{{ site.title | escape }}</a>
-                        {% endif %}
-                    </h1>
-                </div>
+{% if site.show-author %}
+    {% include author.html %}
+{% endif %}
 
-                <div class="body-inner">
-                    {%- include body.html -%}
-
-                    {% if page.previous %}
-                        <a href="{{site.baseurl}}{{page.previous.url}}" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{page.previous.title}}">
-                            <i class="fa fa-angle-left"></i>
-                        </a>
-                    {% else %}
-                        <a href="{{site.baseurl}}/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{site.title}}">
-                            <i class="fa fa-angle-left"></i>
-                        </a>
-                    {% endif %}
-
-                    {% if page.next %}
-                        <a href="{{site.baseurl}}{{page.next.url}}" class="navigation navigation-next navigation-unique" aria-label="Next page: {{page.next.title}}">
-                            <i class="fa fa-angle-right"></i>
-                        </a>
-                    {% endif %}
-                </div>
-            </div>
-
-            <script>
-            var gitbook = gitbook || [];
-            gitbook.push(function() {
-                gitbook.page.hasChanged({%- include metadata-post.json.tpl -%});
-            });
-            </script>
-        </div>
-
-        {%- include footer.html -%}
-
-    </body>
-</html>
+{% if site.disqus.categories contains page.category %}
+    {% include disqus.html %}
+{% endif %}

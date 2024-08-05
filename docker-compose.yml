@@ -1,0 +1,5 @@
+services:
+  chainslake-blog:
+    image: bretfisher/jekyll-serve
+    volumes:
+      - .:/site

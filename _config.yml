@@ -1,66 +1,107 @@
-# Configurations
-title:            Chainslake
-longtitle:        Blockchains Data Lakehouse
-author:           Lake
-email:            lakechain.nguyen@gmail.com
-description: >
-  Data Lakehouse for EVM blockchains
+# main text of home
+title: Chainslake
+bio: Blockchain data lakehouse
 
-version:          1.0
-gitbook_version:  3.2.3
+# twitter summary info
+description: Blog sharing awesome data analysis on blockchain
+# if it's an external image, update below for true
+# better with square images
+external-image: false
+picture: assets/images/profile.png
 
-url:              'https://chainslake.github.io'
-baseurl:          ''
-rss:              RSS
+# your site color theme, true for dark theme, 
+# false to light theme, auto to switch with system.
+dark-theme: true
 
-# bootstrap: use the remote theme for the site itself
-remote_theme: sighingnow/jekyll-gitbook
+# If you want to include your resume, set to true
+# and specify source (external or local).
+resume: false
+resume-external: false
+resume-url: https://google.com/?q=my+resume
 
-toc:
-  enabled: true
-  h_min: 1
-  h_max: 3
+url: https://chainslake.github.io
+# your url: https://USERNAME.github.io
 
-# customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}
-favicon_path:     /assets/gitbook/images/favicon.ico
 
-# markdown render engine.
-markdown:         kramdown
-kramdown:
-  auto_ids:               true
-  input:                  GFM
-  math_engine:            mathjax
-  smart_quotes:           lsquo,rsquo,ldquo,rdquo
-  toc_levels:             1..6
-  syntax_highlighter:     rouge
-  syntax_highlighter_opts:
-    guess_lang:           true
+permalink: /:title/
 
-syntax_highlighter_style: colorful
+# To enable google analytics, supply your token below
+# analytics-google: 'UA-MYANALYTICS'
 
-markdown_ext:             markdown,mkdown,mkdn,mkd,md
+# if you don't want comments in your posts, leave categories empty
+disqus:
+  shortname: github # enter this from your disqus account
+  categories: [blog, project] # only show disqus for posts that have these categories
 
-# Permalinks
-permalink:                /:categories/:year-:month-:day-:title:output_ext
+# if you don't have any of social below, comment the line
+github: chainslake
+email: lakechain.nguyen@gmail.com
 
-# Disqus comments
-# disqushandler:            sighingnow
+authors:
+  lake:
+    name: Lake Nguyen
+    bio: Founder of Chainslake
+    external-image: false
+    picture: assets/images/lake-profile.png
+    github: lakechain
 
-exclude:
-  - _drafts
+# do you want a larger site? change the option below
+# options: [normal, large] | default: normal
+# normal = 560px / large = 810px
+width: large
 
-collections:
-  pages:
-    output: true
-    permalink: /:collection/:path/
+# if you don't need projects, comment the *projects* configs below
+projects: false
 
-page_width: 800px
+# if you don't need "about" or "blog", comment them out below
+about: true
+blog: true
 
-destination:      ./_site
-incremental:      false
-regenerate:       true
+# do you want to show the "read time" of the posts?
+read-time: true
+
+# do you want to show the "tags" inside the posts?
+show-tags: true
+
+# related posts inside a post?
+related: true
+
+# Display links for next and previous posts for the specified categories
+post-advance-links: [blog]
+
+# show author block at the end of a post ?
+show-author: true
+
+# do you want some animations?
+animation: true
+
+# add default values to specific pages or layouts
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+      layout: "post"
+    values:
+      # setting all post to not hidden by default,
+      # can be overridden in the front matter for a specific post
+      hidden: false
 
 plugins:
+  - jekyll-seo-tag
+  - jekyll-gist
   - jekyll-feed
-  - jekyll-readme-index
   - jemoji
+
+compress_html:
+  ignore:
+    envs:
+      - development
+      - stage
+
+exclude:
+  [
+    "README.md",
+    "Gemfile",
+    "Gemfile.lock",
+    "FAQ.md",
+    "vendor",
+  ]
