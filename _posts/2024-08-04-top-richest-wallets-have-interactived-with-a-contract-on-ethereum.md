@@ -34,7 +34,18 @@ Since the `ethereum.transactions` table is very large (it contains all transacti
 ## Write query to get insight
 
 Using chainslake's playground metabase, I wrote a query to return the list of wallets I needed, with 3 parameters as input:
+
+  - Contract address: [0x881D40237659C251811CEC9c364ef91dC08D300C](https://etherscan.io/address/0x881D40237659C251811CEC9c364ef91dC08D300C) (Metamask Swap router)
+  - Block date: Previous 30 days
+  - Token address: [0xdac17f958d2ee523a2206206994597c13d831ec7](https://etherscan.io/address/0xdac17f958d2ee523a2206206994597c13d831ec7) (Tether USD stable coin)
+
+  The results are the top 10 wallets holding the most USDT tokens that have interacted with the *Metamask Swap router* in the last 30 days:
+
 ![Query top richest wallets](/assets/images/posts/2024-08-04/query_top_richest_wallet.png)
+
+
+
+
 
 ## Try API 
 

@@ -3,3 +3,4 @@ services:
     image: bretfisher/jekyll-serve
     volumes:
       - .:/site
+    command: bundle exec jekyll serve -H blog.chainslake
