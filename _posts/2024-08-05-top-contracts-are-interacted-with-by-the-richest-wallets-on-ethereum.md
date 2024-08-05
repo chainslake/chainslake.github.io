@@ -44,7 +44,7 @@ You can try it [here](https://metabase.chainslake.io/question/172-top-contracts-
 
 ## Try API
 
-Here are the details of the API for you to try, you will need an API_KEY to use it. Please email me to get your API_KEY. Have nice day!
+Here are the details of the API for you to try, you will need an API_KEY to use it. Please email me to get your API_KEY or using test api key: `mb_DrYcueOZJcqDMTXBmljppUfs2Kyn04Nl2VlEErHV8hU=`. Have nice day!
 
 *Request*
 
