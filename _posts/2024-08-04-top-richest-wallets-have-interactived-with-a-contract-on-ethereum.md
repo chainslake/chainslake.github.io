@@ -2,7 +2,7 @@
 title: Top richest wallets have interactived with a contract on Ethereum
 layout: post
 date: 2024-08-04 09:00
-image: /assets/images/markdown.jpg
+image: /assets/images/posts/2024-08-04/query_top_richest_wallet.png
 headerImage: false
 tag:
 - ethereum
@@ -39,7 +39,7 @@ Using chainslake's playground metabase, I wrote a query to return the list of wa
   - Block date: Previous 30 days
   - Token address: [0xdac17f958d2ee523a2206206994597c13d831ec7](https://etherscan.io/address/0xdac17f958d2ee523a2206206994597c13d831ec7){:target="_blank"} (Tether USD stable coin)
 
-  The results are the top 10 wallets holding the most USDT tokens that have interacted with the *Metamask Swap router* in the last 30 days:
+The results are the top 10 wallets holding the most USDT tokens that have interacted with the *Metamask Swap router* in the last 30 days:
 
 ![Query top richest wallets](/assets/images/posts/2024-08-04/query_top_richest_wallet.png)
 
