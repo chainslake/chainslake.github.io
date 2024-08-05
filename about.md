@@ -37,6 +37,10 @@ Chainslake brings you a technology solution so you can own, manage, operate and 
 
 Just contact us, and we can start discussing plans to deploy Chainslake on your infrastructure. It usually takes about 2 weeks for the system to be ready for use. You will get a free trial for 1 month, after paying the setup fee, you will be able to use it indefinitely.
 
+## Contacts
+
+Email: [lakechain.nguyen@gmail.com](mailto:lakechain.nguyen@gmail.com)
+
 ## License
 
 Copyright 2024 Chainslake.
