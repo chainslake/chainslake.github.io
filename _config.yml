@@ -87,6 +87,7 @@ defaults:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
