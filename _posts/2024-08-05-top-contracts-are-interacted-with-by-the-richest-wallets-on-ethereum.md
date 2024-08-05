@@ -11,7 +11,7 @@ author: lake
 description: Explain how to build the API on chainslake which get contracts are interacted with by the richest wallets on Ethereum
 ---
 
-Continuing from the previous post, today’s insight is the top contracts that receive the most interactions from the richest wallets on ethereum. The API for this insight is ready and you can find it at the end of this post.
+Continuing from the previous post, today’s insight is the top contracts that receive the most interactions from the richest wallets on ethereum. The API and UI for this insight is ready and you can find it at the end of this post.
 
 ## Why I need this knowledge?
 
@@ -40,7 +40,9 @@ The results are the top 10 contract addresses that received interactions from th
 
 In this query, I took all wallets and contracts that interacted with each other in the last 30 days, then joined with balance to calculate the total number of wallets interacting with each contract and the total balance of these wallets, and finally sorted and took the 10 contracts with the largest total balance.
 
-You can try it [here](https://metabase.chainslake.io/question/172-top-contracts-are-interacted-with-by-the-richest-wallets){:target="_blank"}. Please email me if you don't have an account at chainslake.
+## Try in UI
+
+You can try it [here](https://metabase.chainslake.io/question/172-top-contracts-are-interacted-with-by-the-richest-wallets){:target="_blank"}. Please email me if you don't have an account at chainslake or try in public dashboard [here](https://metabase.chainslake.io/public/dashboard/63a610b0-7957-4860-96fa-71a6c14dc78c){:target="_blank"}
 
 ## Try API
 

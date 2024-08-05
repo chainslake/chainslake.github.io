@@ -11,7 +11,7 @@ author: lake
 description: Explain how to build the API on chainslake which get top richest wallets have interactived with one contract on ethereum
 ---
 
-Hello guys, my name is Lake, founder of Chainslake - A Blockchain data lakehouse framework. I just solved the problem of getting a list of the richest wallets have interacted with any contract on Ethereum, so I wrote this article to share with you how I did it. You can try it out through the API I provided at the end of the article. Now let's get started.
+Hello guys, my name is Lake, founder of Chainslake - A Blockchain data lakehouse framework. I just solved the problem of getting a list of the richest wallets have interacted with any contract on Ethereum, so I wrote this article to share with you how I did it. You can try it out through the API or UI which I provided at the end of the article. Now let's get started.
 
 ## Why I need this knowledge?
 
@@ -43,7 +43,9 @@ The results are the top 10 wallets holding the most USDT tokens that have intera
 
 ![Query top richest wallets](/assets/images/posts/2024-08-04/query_top_richest_wallet.png)
 
-You can try it [here](https://metabase.chainslake.io/question/171-top-richest-wallets-have-interactived-with-a-contract){:target="_blank"}. Please email me if you don't have an account at chainslake.
+## Try in UI
+
+You can try it [here](https://metabase.chainslake.io/question/171-top-richest-wallets-have-interactived-with-a-contract){:target="_blank"}. Please email me if you don't have an account at chainslake or try in public dashboard [here](https://metabase.chainslake.io/public/dashboard/63a610b0-7957-4860-96fa-71a6c14dc78c){:target="_blank"}
 
 ## Try API 
 
