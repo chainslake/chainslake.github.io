@@ -26,7 +26,7 @@ The advantages of products in this group are simplicity and ease of use. However
 
 __General analysis tools__: These are data analytics products that allow users to build their own custom analytics based on the platform's data using programming or query tools like SQL. Some notable products in this group include:
 
-- [Dune Analytics](https://dune.com/home){:target="_blank"}: SQL Data Analytics Platform\\
+- [Dune Analytics](https://dune.com/home){:target="_blank"}: SQL Data Analytics Platform
 - [Footprint Analytics](https://www.footprint.network){:target="_blank"}: Web3 Data Analytics Platform
 
 The advantage of products in this group is to provide a general solution for users, which can solve any problem or need. However, the disadvantage is that it is difficult to use, requiring users to have programming skills, query data with SQL...
@@ -35,7 +35,16 @@ We are researching and developing a new product that can balance the pros and co
 
 - [Sonar](https://sonar.chainslake.io/){:target="_blank"} - an AI powered copilot for crypto analysis.
 
-## Overview
+
+## Contents
+
+1. [Overview](#overview)
+2. [Simple questions](#simple_questions)
+3. [Complex questions](#complex_questions)
+
+> :pray: *I am currently consulting, designing and implementing data analysis infrastructure, Data Warehouse, Lakehouse for individuals and organizations in need. You can see and try a system I have built [here](https://metabase.chainslake.io/public/dashboard/ac9dbee4-af29-4ba8-b494-eae69f4ee835){:target="_blank"}. Please contact me via email: <lakechain.nguyen@gmail.com>. Thank you!*
+
+## Overview <a name="overview"></a>
 
 *Sonar* is a crypto Chatbot, used to answer questions about blockchain data analysis, with some form of data provided as shown below:
 
@@ -45,7 +54,7 @@ We are researching and developing a new product that can balance the pros and co
 
 *Sonar* can answer a number of questions from simple ones such as looking up and summarizing information on a data table to complex queries that require combining multiple tables. Here are some examples from simple to complex for your reference:
 
-## Simple questions
+## Simple questions <a name="simple_questions"></a>
 
 **1. Questions about price**
 
@@ -104,7 +113,7 @@ We are researching and developing a new product that can balance the pros and co
     text-align: center;
 "><img src="/assets/images/posts/2024-11-25/query_7.png" alt="Query volume" width="550"></p>
 
-## Complex questions
+## Complex questions <a name="complex_questions"></a>
 
 Complex questions are questions that require combining multiple pieces of data together. Because it has not been trained, *Sonar* will not be able to answer or will answer incorrectly. At this point, you will need to add definitions and hints to help *Sonar* understand what needs to be done. For example:
 
