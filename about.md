@@ -5,42 +5,46 @@ layout: page
 
 # Chainslake
 
-**Chainslake** is a Blockchain Data Lakehouse framework, used to build the data warehouse for any EVM compatible blockchain. Chainslake download and decode data from [RPC](https://ethereum.org/vi/developers/docs/apis/json-rpc/){:target="_blank"} and enable data pipeline construction to transform data, organize data into tables that can be queried in SQL language, and present results into charts and metrics in BI dashboards.
+Chainslake is a Open Blockchains Data Platform, helps simplify data processing, making blockchain data transformation and visualization simpler and more efficient.
 
-## Screenshot and Demo
+## User roles in Chainslake
 
-The image below is a simple token analytics dashboard built on ethereum data in Chainslake's data warehouse. You can try it out in this [demo](https://metabase.chainslake.io/public/dashboard/db6301d1-9043-43fe-9c3e-ad2729d9b28e){:target="_blank"}.
+- __Data Analyst__: who queries data from tables in Chainslake's data warehouse and then presents the results into charts, tables and dashboards, sharing them with those who need them. Sign up and start using it for free [here](https://metabase.chainslake.io) or view this [demo dashboard](https://metabase.chainslake.io/public/dashboard/ac9dbee4-af29-4ba8-b494-eae69f4ee835){:target="_blank"}.
+- __Data Engineer__: who build [Job pipelines](https://docs.chainslake.io/docs/job-pipeline) to transform raw data into tables of data useful for querying.
+- __Developer__: Program [Data applications](https://docs.chainslake.io/docs/data-application) running on Chainslake to fetch data from new data sources (e.g. new chains).
 
-![Data analyst](/assets/images/pages/data-analyst.png){:style="width: 100%"}
 
-Playground allows users to write SQL queries
+## Chainslake specifications
 
-![Query playground](/assets/images/pages/query-playground.png){:style="width: 100%"}
+- Chainslake is built as a big data processing system with:
+    - High performance
+    - High availability
+    - High reliability
+    - Scalable
+    - Fault tolerant
+- and is designed to suit the requirements of blockchain data processing including:
+    - Accurate and synchronized data processing between tables
+    - Minimize data issues such as missing or duplicate data
+    - Easily repair data when errors occur on 1 table or on multiple related tables. Thereby ensuring data is always in perfect state
 
-Data tables are organized in folders for easy management.
+## Chainslake features
 
-![Data catalog](/assets/images/pages/data-catalog.png){:style="width: 100%"}
+Chainslake is built for blockchain data builders, it is open and free, easy to join. Builders just need to focus on their business, no need to worry about data.
 
-Data is automatically updated by processing on the data pipeline.
+## How to get start
 
-![Data pipeline](/assets/images/pages/data-pipeline.png){:style="width: 100%"}
+- If you are new, Chainslake encourages you to sign up for an account [here](https://metabase.chainslake.io) and start building dashboards from the data tables available on Chainslake, we have a good example for you [here](https://metabase.chainslake.io/dashboard/60-erc20-token).
+- If you are already proficient in building dashboards from existing tables and want to build new tables, let start with [SQL Transformer](https://docs.chainslake.io/docs/data-app-store/#sql-transformer) which is an application for building tables in SQL language. You will need to read about [table design](https://docs.chainslake.io/docs/table-design) and [job pipeline](https://docs.chainslake.io/docs/job-pipeline) before you can start building tables.
+- Finally, if you need to add new data (e.g. new chains, data from other centralized exchanges), or need a special transformation that SQL cannot perform. You will need to build a new [Data App](https://docs.chainslake.io/docs/data-application) for your needs.
 
-## Why Chainslake
+## Self-hosted deployment
 
-During the life cycle of protocols, smart contracts, wallets or chains generate a lot of data, how do we know how many wallets have interacted with a smart contract in a day?, or how to keep track revenue and profits from a protocol? To answer such questions you need a data warehouse for blockchain data, where you can write appropriate queries to get the results you need.
+Chainslake offers a self-hosted version that allows users to deploy the Chainslake platform on their own infrastructure such as On-premise, Amazon Web Services, Google Cloud Platform, Databricks... Please contact us for cooperation.
 
-There have been a number of data warehouses on the market, such as [Dune](https://dune.com/) or [Footprint](https://www.footprint.network/). However, not all chains are supported, and not all protocols can decode data.
-
-Chainslake brings you a technology solution so you can own, manage, operate and use blockchain data warehouse according to your own needs. Any EVM blockchain, any protocol (even the ones you develop yourself) are supported.
-
-## How to Get Started
-
-Just contact us, and we can start discussing plans to deploy Chainslake on your infrastructure. It usually takes about 2 weeks for the system to be ready for use. You will get a free trial for 1 month, after paying the setup fee, you will be able to use it indefinitely.
-
-## Contacts
+## Contact
 
 Email: [lakechain.nguyen@gmail.com](mailto:lakechain.nguyen@gmail.com)
 
-## License
+## Licence
 
-Copyright 2024 Chainslake.
+Copyright Chainslake 2024
