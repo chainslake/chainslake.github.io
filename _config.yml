@@ -1,13 +1,13 @@
 # main text of home
-title: Chainslake
-bio: Blockchain data lakehouse
+title: Lake Nguyen
+bio: Founder of Chainslake
 
 # twitter summary info
-description: Blog sharing awesome data analysis on blockchain
+description: Blog sharing knowledge about blockchain data
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/profile.png
+picture: assets/images/lake-profile.png
 
 # your site color theme, true for dark theme, 
 # false to light theme, auto to switch with system.
@@ -31,7 +31,7 @@ analytics-google: 'G-JFKPT0MPRS'
 # if you don't want comments in your posts, leave categories empty
 disqus:
   shortname: github # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+  categories: [blog, english] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
 github: chainslake
@@ -54,7 +54,7 @@ width: large
 projects: false
 
 # if you don't need "about" or "blog", comment them out below
-about: true
+about: false
 blog: true
 
 # do you want to show the "read time" of the posts?
@@ -67,10 +67,10 @@ show-tags: true
 related: true
 
 # Display links for next and previous posts for the specified categories
-post-advance-links: [blog]
+post-advance-links: [blog, english]
 
 # show author block at the end of a post ?
-show-author: true
+show-author: false
 
 # do you want some animations?
 animation: true
