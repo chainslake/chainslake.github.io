@@ -12,7 +12,7 @@ author: lake
 description: Chainslake là một blockchain Lakehouse Framework dành cho doanh nghiệp, cá nhân trong lĩnh vực blockchain, crypto cho phép họ có thể xây dựng data lakehouse phục vụ mục đích truy vấn, truy vết giao dịch, theo dõi cảnh báo, phân tích dữ liệu, dự báo hoặc sử dụng dữ liệu để huấn luyện các mô hình AI...
 ---
 
-Chào mọi người, mình là Lake Nguyen, founder của Chainslake - một lakehouse framework dành cho lĩnh vực blockchain và crypto. Chainslake cung cấp giải pháp công nghệ cho khách hàng có thể xây dựng và vận hành blockchain lakehouse phục vụ mục đích truy vấn, truy vết giao dịch, theo dõi, cảnh báo, phân tích, dự đoán xu hướng từ dữ liệu hoặc sử dụng dữ liệu để huấn luyện các mô hình AI... Chainslake đang có một trang demo cho khách hàng trải niệm miễn phí tại [chainslake.com](https://chainslake.com), một số kênh demo phân tích theo chain, protocol:
+Chào mọi người, mình là Lake Nguyen, founder của Chainslake - một lakehouse framework dành cho lĩnh vực blockchain và crypto. Chainslake cung cấp giải pháp công nghệ cho khách hàng, giúp họ có thể xây dựng và vận hành blockchain lakehouse phục vụ nhiều mục đích như truy vấn, truy vết giao dịch, theo dõi, cảnh báo, phân tích, dự đoán xu hướng từ dữ liệu hoặc sử dụng dữ liệu để huấn luyện các mô hình AI... Chainslake đang có một trang demo cho khách hàng trải niệm miễn phí tại [chainslake.com](https://chainslake.com) và một số kênh demo phân tích theo chain, protocol:
 - [chainslake.com/@bitcoin](https://chainslake.com/@bitcoin)
 - [chainslake.com/@ethereum](https://chainslake.com/@ethereum)
 - [chainslake.com/@binance](https://chainslake.com/@binance)
@@ -21,7 +21,7 @@ Chào mọi người, mình là Lake Nguyen, founder của Chainslake - một la
 - [chainslake.com/@opensea](https://chainslake.com/@opensea)
 - [chainslake.com/@uniswap](https://chainslake.com/@uniswap)
 
-Chainslake đem đến cho khách hàng quyền làm chủ hệ thống và dữ liệu từ đó đảm bảo tính riêng tư và bảo mật cho khách hàng đồng thời tối ưu được chi phí hạ tầng theo nhu cầu sử dụng. Tuy nhiên điều này cũng đòi hỏi khách hàng cần có những hiểu biết nhất định về thiết kế và cách thức vận hành hệ thống để có thể sử dụng framework hiệu quả. Vì vậy, song song với việc phát triển và hoàn thiện framework, mình sẽ chia sẻ các kiến thức và kinh nghiệm sử dụng framework trong blog này, rất mong nhận được sự ủng hộ từ bạn đọc.
+Chainslake đem đến cho khách hàng quyền làm chủ hệ thống và dữ liệu từ đó đảm bảo tính riêng tư và bảo mật cho khách hàng, đồng thời tối ưu được chi phí hạ tầng theo nhu cầu sử dụng. Tuy nhiên điều này cũng đòi hỏi khách hàng cần có những hiểu biết nhất định về thiết kế và cách thức vận hành hệ thống để có thể sử dụng framework hiệu quả. Chính vì vậy, song song với việc phát triển và hoàn thiện framework, mình sẽ viết blog này chia sẻ các kiến thức và kinh nghiệm sử dụng framework, rất mong nhận được sự ủng hộ từ bạn đọc.
 
 Trong bài viết đầu tiên này, mình sẽ giới thiệu tổng quan và thiết kế kiến trúc tổng thể của framework.
 
@@ -32,13 +32,13 @@ Trong bài viết đầu tiên này, mình sẽ giới thiệu tổng quan và t
 
 ## Giới thiệu tổng quan <a name="overview"></a>
 
-Nếu bạn là một người làm việc trong lĩnh vực blockchain và crypto, hẳn là bạn đã biết dữ liệu blockchain được chia sẻ công khai trên các Node, toàn bộ lịch sử giao dịch của mỗi chain được đóng thành các block và được phân phối đến tất cả các Node của chain. Bạn có thể dễ dàng lấy được những dữ liệu này thông qua việc cài đặt Node hoặc API cung cấp bởi các public Node. 
+Nếu bạn là một người quan tâm đến lĩnh vực blockchain và crypto, chắc hản là bạn biết dữ liệu trong blockchain (dữ liệu Onchain) được chia sẻ công khai (do tính chất phi tập trung của Blockchain). Điều này cho phép bất kỳ ai cũng có thể tiếp cận và sử dụng dữ liệu Onchain này. Tuy nhiên dữ liệu trong blockchain (thường là dữ liệu giao dịch) được đóng trong các block, sử dụng các cấu trúc dữ liệu đặc biệt để tối ưu cho việc xác thực giao dịch nhưng lại khiến việc truy xuất và phân tích dữ liệu này gặp khó khăn, từ đó đã thúc đẩy sự xuất hiện của các sản phẩm phân tích dữ liệu blockchain.
 
-Tuy nhiên lấy được là 1 chuyện còn để thực sự khai thác được những dữ liệu này thì không phải điều đơn giản, chính vì vậy các công cụ phân tích dữ liệu blockchain đã ra đời. Sử dụng các công cụ này bạn đã có thể kết hợp dự liệu Onchain - Dữ liệu được chia sẻ công khai giữa các Node, và dữ liệu Offchain - Dữ liệu riêng tư của bạn. Và đây là lúc vấn đề xuất hiện, bạn buộc phải chia sẻ những dữ liệu Offchain của bạn với các công cụ phân tích, điều này tiềm ẩn nguy cơ về bảo mật. Ở đây chúng ta cần thống nhất rằng dữ liệu Offchain bao gồm tất cả những gì thuộc về riêng bạn, mà bạn không muốn chia sẻ công khai, nó bao gồm cả những tri thức, kinh nghiệm của bạn. 
+Về bản chất, tất cả sản phẩm phân tích blockchain đều là sự kết hợp giữa dữ liệu Onchain và tri thức Offchain (bao gồm dữ liệu Offchain, cách thức phối hợp, phân tích, trình bày... hay bất kỳ dữ liệu riêng tư nào khác). Chính phần Offchain mới làm nên sự khác biệt giữa các sản phẩm này. Nếu bạn đang muốn xây dựng một sản phẩm phân tích blockchain của riêng mình hay đơn giản là muốn đảm bảo riêng tư cho phần Offchain của bạn thì bạn có thể cân nhắc sử dụng Chainslake.
 
-Nếu như bạn cho rằng dữ liệu Offchain của bạn không quá quan trọng và có thể chấp nhận rui ro bị lộ, bạn có thể tiếp tục sử dụng các công cụ phân tích đang có, chỉ cần trả 1 khoản phí nhỏ thậm chí là miễn phí. Ngược lại nếu bạn đánh giá rằng dữ liệu Offchain của bạn là quan trọng, là lợi thế của bạn so với những người khác, không chấp nhận bị lộ ra ngoài, lúc này Chainslake sẽ là một lựa chọn hợp lý dành cho bạn. 
+Chainslake là công cụ phân tích cho phép bạn xây dựng và vận hành nền tảng dữ liệu một cách riêng tư, nơi mà bạn có thể thoải mái kết hợp dữ liệu Onchain với dữ liệu Offchain của bạn mà không cần lo lắng về các nguy cơ lộ lọt dữ liệu, từ đó có thể phát triển sản phẩm phân tích của riêng bạn. 
 
-Thay vì phụ thuộc vào các công cụ phân tích, bản thân Chainslake chính là công cụ phân tích cho phép bạn xây dựng và vận hành nền tảng dữ liệu một cách riêng tư, nơi mà bạn có thể thoải mái kết hợp dữ liệu Onchain với dữ liệu Offchain riêng tư của bạn mà không cần lo lắng về các nguy cơ lộ lọt dữ liệu. Hiểu rõ đối tượng khách hàng của mình nên Chainslake được thiết kế theo hướng tinh gọn nhưng vẫn dễ mở rộng theo nhu cầu, từ đó giúp khách hàng tiết kiệm chi phí. Về mặt triển khai, Chainslake cung cấp cho khách hàng 2 tùy chọn là On-premise trên server vật lý hoặc On-cloud trên AWS.
+Đối với một sản phẩm phân tích dữ liệu, đặc biệt là với dữ liệu lớn như Blockchain, vấn đề tối ưu chi phí luôn cần quan tâm đặc biệt, hiểu được điều này Chainslake được thiết kế theo hướng tinh gọn nhưng vẫn dễ mở rộng theo nhu cầu, từ đó giúp tiết kiệm chi phí. Về mặt triển khai, Chainslake có 2 tùy chọn là On-premise trên server vật lý hoặc On-cloud trên AWS.
 
 ## Kiến trúc thiết kế <a name="design_architecture"></a>
 
