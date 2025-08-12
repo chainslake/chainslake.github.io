@@ -43,7 +43,7 @@ To run locally do the following:
 3. Enter the cloned folder via terminal and run:
 ```sh
 bundle install
-bundle exec jekyll serve
+bundle exec jekyll serve --livereload
 ```
 4. Open it in your browser: [http://localhost:4000](http://localhost:4000)
 
