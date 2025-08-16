@@ -6,7 +6,7 @@ image: /assets/images/posts/2025-08-10/chainslake_thumbnail.png
 headerImage: false
 published: true
 tag:
-- blockchain
+- vietnam
 category: blog
 author: lake
 description: Bài viết này sẽ giới thiệu về cách thức tổ chức và các bảng dữ liệu trong Chainslake, làm thế nào để truy vấn hiệu quả.

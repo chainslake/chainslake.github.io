@@ -6,7 +6,7 @@ image: /assets/images/posts/2025-08-10/chainslake_thumbnail.png
 headerImage: false
 published: true
 tag:
-- blockchain
+- vietnam
 category: blog
 author: lake
 description: Chainslake là một blockchain Lakehouse Framework dành cho doanh nghiệp, cá nhân trong lĩnh vực blockchain, crypto cho phép họ có thể xây dựng data lakehouse phục vụ mục đích truy vấn, truy vết giao dịch, theo dõi cảnh báo, phân tích dữ liệu, dự báo hoặc sử dụng dữ liệu để huấn luyện các mô hình AI...

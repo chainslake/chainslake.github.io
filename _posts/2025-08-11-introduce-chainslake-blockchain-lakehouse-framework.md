@@ -6,7 +6,7 @@ image: /assets/images/posts/2025-08-10/chainslake_thumbnail.png
 headerImage: false
 published: true
 tag:
-- blockchain
+- english
 category: english
 author: lake
 description: Chainslake is a Lakehouse Framework for businesses in the blockchain and crypto, allowing customer to build data lakehouses for the purpose of querying, tracing transactions, monitoring alerts, analyzing data, forecasting or using data to train AI models...
