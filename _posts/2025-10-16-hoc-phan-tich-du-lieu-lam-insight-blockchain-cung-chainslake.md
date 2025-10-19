@@ -2,7 +2,7 @@
 title: Học phân tích dữ liệu, làm Insight Blockchain cùng Chainslake
 layout: post
 date: 2025-10-16 06:00
-image: /assets//assets/images/posts/2025-08-10/chainslake_thumbnail.png
+image: /assets/images/posts/2025-08-10/chainslake_thumbnail.png
 headerImage: false
 published: true
 tag:
@@ -102,7 +102,7 @@ Hiểu một cách đơn giản, blockchain là một cơ sở dữ liệu phi t
 
 ## Các nội dung khác nếu bạn quan tâm
 
-1. [Giới thiệu Chainslake - Blockchain Lakehouse Framework](/gioi-thieu-chainslake-blockchain-lakehouse-framework/): Mô tả sơ lược về kiến trục thiết kế và triển khai của Chainslake, dành cho bạn nếu muốn tự vận hành Data Lake cá nhân.
+1. [Giới thiệu Chainslake - Blockchain Lakehouse Framework](/gioi-thieu-chainslake-blockchain-lakehouse-framework/): Mô tả sơ lược về kiến trúc thiết kế và triển khai của Chainslake, dành cho bạn nếu muốn tự vận hành Data Lake cá nhân.
 2. [Truy vấn dữ liệu trong Chainslake](/truy-van-du-lieu-trong-chainslake/): Giới thiệu tổ chức các bảng dữ liệu trong Chainslake, hướng dẫn viết truy vấn SQL hiệu quả.
 3. [Dữ liệu Ethereum trong Chainslake](/du-lieu-ethereum-trong-chainslake/): Tìm hiểu sâu về các bảng dữ liệu của Ethereum, từ đó hiểu được tất cả các EVM chain khác.
 
