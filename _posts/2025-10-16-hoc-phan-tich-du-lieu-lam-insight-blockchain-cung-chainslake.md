@@ -9,7 +9,7 @@ tag:
 - vietnam
 category: blog
 author: lake
-description: 
+description: Chainslake là một nền tảng chia sẻ Insight Blockchain, chúng tôi đã trích xuất và tổ chức dữ liệu blockchain thành các bảng để bạn có thể truy vấn bằng ngôn ngữ SQL, phục vụ cho các mục đích như truy xuất, nghiên cứu, phân tích dữ liệu.
 ---
 
 Hiểu một cách đơn giản, blockchain là một cơ sở dữ liệu phi tập trung, được chia sẻ công khai, trong đó chứa tất cả các giao dịch đã được xác thực. Từ những giao dịch chuyển tiền đơn giản đến những giao dịch với logic cực kỳ phức tạp đều được lưu trữ vĩnh viễn, không thể thay đổi hay xóa bỏ, trở thành bằng chứng không thể chối cãi cho mỗi giao dịch. Tuy được chia sẻ công khai, nhưng dữ liệu blockchain tương đối khó để khai thác hiệu quả do blockchain vốn được thiết kế để đảm bảo an toàn và bảo mật cao chứ không phù hợp để phân tích. Để giúp tất cả mọi người có thể dễ dàng truy vấn dữ liệu blockchain cho các mục đích liên quan đến khai thác, nghiên cứu và phân tích dữ liệu, [Chainslake](https://chainslake.com/public/local) đã trích xuất và tổ chức dữ liệu blockchain thành các bảng trong Data Lake, từ đó giúp cho các nhà phân tích, nhà nghiên cứu, các Insight Creator có thể dễ dàng truy vấn bằng ngôn ngữ SQL.
