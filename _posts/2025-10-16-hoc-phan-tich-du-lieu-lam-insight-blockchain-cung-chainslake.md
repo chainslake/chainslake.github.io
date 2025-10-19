@@ -100,6 +100,12 @@ Hiểu một cách đơn giản, blockchain là một cơ sở dữ liệu phi t
 
 15\. Tiểu mục cấu hình cho các biến tham số.
 
+## Các nội dung khác nếu bạn quan tâm
+
+1. [Giới thiệu Chainslake - Blockchain Lakehouse Framework](/gioi-thieu-chainslake-blockchain-lakehouse-framework/): Mô tả sơ lược về kiến trục thiết kế và triển khai của Chainslake, dành cho bạn nếu muốn tự vận hành Data Lake cá nhân.
+2. [Truy vấn dữ liệu trong Chainslake](/truy-van-du-lieu-trong-chainslake/): Giới thiệu tổ chức các bảng dữ liệu trong Chainslake, hướng dẫn viết truy vấn SQL hiệu quả.
+3. [Dữ liệu Ethereum trong Chainslake](du-lieu-ethereum-trong-chainslake/): Tìm hiểu sâu về các bảng dữ liệu của Ethereum, từ đó hiểu được tất cả các EVM chain khác.
+
 ## Tài liệu tham khảo
 
 1. Trang cộng đồng chia sẻ Insight blockchain: [https://chainslake.com/](https://chainslake.com/)
