@@ -72,7 +72,7 @@ Hiểu một cách đơn giản, blockchain là một cơ sở dữ liệu phi t
 
 7\. Nút mở mục cài đặt cho loại biểu đồ đang chọn
 
-8\. Nút thay đổi chế độ xem từ dạng biểu đồ sang dạng bảng
+8\. Nút thay đổi chế độ xem từ dạng biểu đồ sang dạng bảng dữ liệu. Lưu ý rằng tất cả các biểu đồ đều được vẽ nên từ bảng dữ liệu, là kết quả của câu truy vấn SQL.
 
 <p style="
     text-align: center;
