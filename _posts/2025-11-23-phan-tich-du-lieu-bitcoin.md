@@ -12,7 +12,7 @@ author: lake
 description: Bitcoin là đồng tiền điện tử đầu tiên và cũng là quan trọng nhất trong thế giới Crypto. Trong bài viết này mình sẽ giới thiệu những kiến thức cơ bản nhất về Bitcoin và một số phân tích dữ liệu cơ bản xung quanh blockchain này.
 ---
 
-Để mở đầu cho chuỗi các bài học về phân tích dữ liệu blockchain cùng Chainslake, mình sẽ chia sẻ với các bạn các kiến thức về Bitcoin - Blockchain đầu tiên được giới thiệu và cũng là đồng tiền điện tử có giá trị nhất hiện tại. Để tiện cho việc theo dõi của các bạn thì các bài học mình sẽ tổ chức thành 2 phần: Phần 1 sẽ giới thiệu các khái niệm, kiến thức cơ bản cần biết về chain, giao thức... phần 2 các bạn sẽ được hướng dẫn thực hành trực tiếp trên dữ liệu của Chainslake.
+Để mở đầu cho chuỗi các bài học về phân tích dữ liệu blockchain cùng Chainslake, mình sẽ chia sẻ với các bạn các kiến thức về Bitcoin - Blockchain đầu tiên được giới thiệu và cũng là đồng tiền điện tử có giá trị nhất hiện tại. Để tiện cho việc theo dõi của các bạn thì các bài học mình sẽ tổ chức thành 2 phần: Phần 1 sẽ giới thiệu các khái niệm, kiến thức cơ bản cần biết về chain, giao thức... phần 2 các bạn sẽ được hướng dẫn thực hành trực tiếp trên dữ liệu của Chainslake. 
 
 ## Khái niệm và kiến thức cơ bản về Bitcoin <a name="introduction"></a>
 
@@ -39,6 +39,9 @@ Bitcoin được giới thiệu lần đầu trong bài báo cùng tên của t�
 *Đồng tiền có thể lập trình:* Một trong những chức năng thú vị nhất của Bitcoin là nó cho phép người dùng có thể lập trình điều kiện chi tiêu cho khoản tiền của họ. Trường hợp phổ biến nhất là khoản tiền chỉ được chi tiêu nếu có chữ ký số hợp lệ của người nhận (trường hợp chuyển tiền thông thường), một trường hợp khác với điều kiện chi tiêu cần có chữ ký của 2 hoặc nhiều người (trường hợp chuyển tiền đến 1 ví đa chữ ký), thậm chí bạn cũng có thể đặt điều kiện chi tiêu khoản tiền sau 1 thời gian nhất định.
 
 ## Phân tích dữ liệu Bitcoin cùng Chainslake <a name="analyst"></a>
+
+Bạn có thể xem lại bài viết này nếu cần: [Học phân tích dữ liệu, làm Insight blockchain cùng Chainslake](/hoc-phan-tich-du-lieu-lam-insight-blockchain-cung-chainslake/)
+
 ### Phân tích thô
 Là blockchain đầu tiên được giới thiệu nên Bitcoin có thiết kế khá đơn giản (khi so với các blockchain ra đời sau này), dù đồng tiền có chức năng lập trình, nhưng rất hạn chế về chức năng, do đó dữ liệu của Bitcoin không quá phức tạp, chúng chỉ gồm các giao dịch chuyển tiền được đóng trong các khối liên tiếp nhau. Hãy thực hiện câu truy vấn sau:
 
@@ -149,7 +152,7 @@ Chainslake đã xây dựng sẵn bảng dữ liệu UTXO, bạn có thể thử
 SELECT
   *
 FROM
-  
+  bitcoin_balances.utxo_latest_day
 WHERE
   address = '3AE6QbvQLwoctsHBmoZddkXu2ofnxjMeAQ'
 ```
