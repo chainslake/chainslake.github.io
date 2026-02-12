@@ -54,7 +54,7 @@ $$
 Q = x.G
 $$
 
-Trong đó G là một điểm nằm trên đường cong EC được chia sẻ công khai (Các tham số của đường cong có thể lấy trong tài liệu chuẩn: [SEC 2: Recommended Elliptic Curve Domain Parameters](https://www.secg.org/sec2-v2.pdf)). $x$ là private key, một số được chọn ngẫu nhiên trong không gian số 32 bytes (64 số trong hệ hex16, ~78 số trong hệ thập phân). Q là public key, kết quả của phép nhân, cũng là 1 điểm nằm trên đường cong EC. Với không gian số của private key, việc dò được private key từ public key là điều không thể ở thời điểm hiện tại.
+Trong đó G là một điểm nằm trên đường cong EC được chọn công khai (Các tham số của đường cong có thể lấy trong tài liệu chuẩn: [SEC 2: Recommended Elliptic Curve Domain Parameters](https://www.secg.org/sec2-v2.pdf)). $x$ là private key, một số được chọn ngẫu nhiên trong không gian số 32 bytes (64 số trong hệ hex16, ~78 số trong hệ thập phân). Q là public key, kết quả của phép nhân, cũng là 1 điểm nằm trên đường cong EC. Với không gian số của private key, việc dò được private key từ public key là điều không thể ở thời điểm hiện tại.
 
 *Ký giao dịch*
 
