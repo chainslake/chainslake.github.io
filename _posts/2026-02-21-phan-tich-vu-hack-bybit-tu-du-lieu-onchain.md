@@ -253,6 +253,6 @@ block_date,tx_hash,out_value
 "March 3, 2025",0xae3722a1e1b54fec0aa1329f73dae7ee5a89d9b50fcd6c565a72107a0d1a3e63,"-1,003.1"
 ```
 
-Đến đây mặc dù công việc điều tra vẫn chưa kết thúc, tuy nhiên mình xin phép dừng bài viết do đã quá dài. Nếu các bạn quan tâm hoặc mong muốn đi sâu hơn nữa thì có thể tiếp tục cùng với Chainslake nhé.
+(to be continue)
 
 
