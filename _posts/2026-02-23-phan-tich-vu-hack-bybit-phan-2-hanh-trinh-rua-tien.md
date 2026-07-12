@@ -175,7 +175,12 @@ Kết quả:
     text-align: center;
 "><a href="https://metabase.chainslake.com/public/question/1e691d4d-6a6b-4d18-bb07-a125ac7d4226" target="_blank"><img src="/assets/images/posts/2026-02-23/bitcoin_transfer_flow.png" alt="Bitcoin transfer flow" width="100%"></a></p>
 
-Ta thấy rằng trong vòng 10 ngày sau vụ tấn công, Hacker đã swap ETH sang BTC thông qua Thorchain, sau đó tẩu tán toàn bộ số BTC sang các địa chỉ ví khác nhau. Việc theo dõi số tiền này là cực kỳ phức tạp, đòi hỏi các phân tích chuyên sâu hơn. Chainslake sẽ tiếp tục nghiên cứu và cập nhật những phân tích tiếp theo về vụ hack này. 
+Ta thấy rằng trong vòng 10 ngày sau vụ tấn công, Hacker đã swap ETH sang BTC thông qua Thorchain, sau đó tẩu tán toàn bộ số BTC sang các địa chỉ ví khác nhau. 
+
+Mặc dù cơ chế CoinJoin có thể làm mất dấu dòng tiền, tuy nhiên việc "rửa" 1.5 tỷ USD là không hề đơn giản, cần phải có 1 lượng tiền "sạch" lơn hơn nhiều lần sồ tiền cần rửa để trộn cùng trong giao dịch, Hacker buộc phải chia nhỏ số tiền và mất nhiều thời gian xoay vòng mới có thể hoàn thành, quá trình này có thể gặp sai sót và để lại dấu vết cho các nhà điều tra.
+
+
+Việc theo dõi số tiền này là cực kỳ phức tạp, đòi hỏi các phân tích chuyên sâu hơn. Chainslake sẽ tiếp tục nghiên cứu và cập nhật những phân tích tiếp theo về vụ hack này. 
 
 Cảm ơn bạn đọc đã theo dõi!
 
